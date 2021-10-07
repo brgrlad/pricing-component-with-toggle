@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    {{!-- font-family: 'Manrope', sans-serif; --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+    {{!-- style sheet --}}
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <title>Interactive Pricing Component</title>
+
+</head>
+
+<body>
+
+    <div class="mainWrapper">
+
+
+        <header>
+
+            <img id="pattern-Circles" src="/img/pattern-circles.svg" alt="">
+
+            <h1>Simple, traffic-based pricing</h1>
+
+            <div class="pWrapper">
+
+                <p>Sign-up for our 30-day trial.</p>
+                <p>No credit card required.</p>
+            </div>
+
+        </header>
+
+
+
+
+        <div class="priceBox">
+
+            <div class="pageviews"> 100K PAGEVIEWS </div>
+
+            <input type="range" class="rangeSlider" id="rangeSlider"min="0" max="5" value="0" step="1" list="rangeList">
+
+                <datalist id="rangeList">
+                <option value="1">11</option>
+                <option value="2">22</option>
+                <option value="3">33</option>
+                <option value="4">44</option>
+                <option value="5">55</option>
+            </datalist>
+
+
+            <div class="toggleWrapper">
+
+                <p>Montly billing</p>
+
+                <div class="toggleBackground">
+                    <div class="toggleCircle"></div>
+
+                </div>
+
+                <p>Yearly Billing</p>
+
+                <div class="discount">
+                    <p> -25%</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        {{!-- features --}}
+        <div class="featuresBox">
+
+
+            <ul id="featuresUL">
+
+                <li> <span class="marginLeft"> </span> Unlimited websites </li>
+                <li> <span class="marginLeft"> </span> 100% data ownership </li>
+                <li> <span class="marginLeft"> </span> Email reports </li>
+
+            </ul>
+
+
+            <div class="btnWrapper">
+                <button> Start my trial</button>
+            </div>
+
+
+        </div>
+
+        {{!-- end main wrapper --}}
+    </div>
+
+
+
+</body>
+
+
+<script src='/scripts/index.js'></script>
+
+
+</html>
