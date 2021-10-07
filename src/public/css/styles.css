@@ -19,6 +19,9 @@
 
 }
 
+
+/* mobile view first: max-width: 900px */
+
 h1{
     font-size: 20px;
     line-height: 50px;
@@ -99,17 +102,15 @@ header {
     margin-bottom: 15px;
 }
 
+
+/*  ---------------------   start range slider ------------------------- */
+
+
 .rangeSlider {
     width: 80%;
     margin-bottom: 15px;
     margin-top: 15px;
-    /* border: 1px solid red; */
-    /* background-color: pink; */
-
 }
-
-/*  ---------------------   start range slider ------------------------- */
-
 
 
 input[type=range] {
@@ -152,10 +153,11 @@ input[type=range]::-webkit-slider-thumb {
 
 input[type="range"]:active::-webkit-slider-runnable-track {
     background-color: var(--softCyan);
+
 }
 
 input[type="range"]:active::-webkit-slider-thumb {
-    /* background-color: var(--lightGreyBlue); */
+
     box-shadow: 5px 5px 30px hsla(174, 86%, 45%, 0.479);
 
 }
@@ -181,7 +183,6 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50px;
     background: var(--strongCyan);
     border: none;
-
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -17px;
@@ -189,6 +190,7 @@ input[type=range]::-moz-range-thumb {
     background-repeat: no-repeat;
     background-position-x: 9px;
     background-position-y: 13px;
+
 }
 
 input[type="range"]:active::-moz-range-track {
@@ -340,7 +342,7 @@ button {
     font-weight: 600;
     cursor: pointer;
 
-    /* margin: 5px 0; */
+
 
 
 }
@@ -351,23 +353,21 @@ button {
 
 
 
-
-
-
-
 /* desktop view */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 
 
     body{
         background-size: cover;
         background-position-y: -50vh;
 
+
     }
 
     .mainWrapper{
         width: 30%;
         height: 100vh;
+
 
 
 
@@ -444,11 +444,3 @@ button {
 }
 
 
-@keyframes createBox {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }

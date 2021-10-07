@@ -17,9 +17,9 @@ const createPriceDiv = () => {
     newDiv.innerHTML = `<p class="priceP"> <span class="priceText"> €16.00 </span> <span
     class="priceTextPosition"> <span class="monthText"> / month </span> </span></p>`
 
-    if(clientWidth > 600) {
+    if(clientWidth > 900) {
         pageViews.appendChild(newDiv)
-    } else if(clientWidth < 600) {
+    } else if(clientWidth < 900) {
         rangeSlider.after(newDiv)
     }
 }
