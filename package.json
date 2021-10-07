@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/node/routes/routes.js",
     "dev": "nodemon src/node/routes/routes.js"
   },
   "author": "",
